@@ -10,6 +10,7 @@ model = LatexOCR() #main model that converts image to Latex
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    latex_text = None
     if request.method == 'POST':
         uploaded_image = request.files["image"] #served from frontend
         image = Image.open(io.BytesIO(uploaded_image.read()))
