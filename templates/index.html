@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to LaTeX</title>
+</head>
+<body>
+  <h2>Upload an image to convert</h2>
+
+  <form action="/" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  {% if result %}
+    <hr>
+    <h3>Predicted Output:</h3>
+    <textarea rows="5" cols="60">{{ result }}</textarea>
+  {% endif %}
+</body>
+</html>
+
