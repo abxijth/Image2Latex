@@ -7,22 +7,30 @@ A simple Flask web app that converts mathematical equation images into LaTeX cod
 - Display the generated LaTeX code in the browser
 
 ## 🛠️ Setup Instructions
-1. Clone the repository  
+1. Clone the repository
+   ``` 
    git clone https://github.com/<your-username>/Image2Latex.git  
-   cd Image2Latex  
+   cd Image2Latex
+   ```
 
-2. Create a virtual environment  
+3. Create a virtual environment
+   ```
    python3 -m venv venv  
    source venv/bin/activate   # on Linux or macOS  
-   venv\Scripts\activate      # on Windows  
+   venv\Scripts\activate      # on Windows
+   ```
 
-3. Install dependencies
+5. Install dependencies
+   ```
    pip install -r requirements.txt
+   ```
 
-4. Run the Flask app  
-   python3 main.py  
+7. Run the Flask app
+   ```
+   python3 main.py
+   ```
 
-The app will run at: http://127.0.0.1:5000
+The app will run at: ```http://127.0.0.1:5000```
 
 ## 🧑‍💻 Project Structure
 Image2Latex/  
@@ -33,17 +41,21 @@ Image2Latex/
 └── README.md  
 
 ## 🤝 Contributing (Example For Frontend)
-1. Create a new branch  
-   git checkout -b feature/frontend  
+1. Create a new branch
+   ```
+   git checkout -b feature/frontend
+   ```
 
-2. Make your changes  
+3. Make your changes  
 
-3. Commit and push  
+4. Commit and push
+   ```
    git add .  
    git commit -m "feat: improve frontend design"  
-   git push origin feature/frontend  
+   git push origin feature/frontend
+   ```
 
-4. Open a Pull Request on GitHub 🚀
+6. Open a Pull Request on GitHub 🚀
 
 ## 🧠 Future Improvements
 - Better error handling for non-math images  
