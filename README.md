@@ -49,16 +49,17 @@ Image2Latex/
 
 ## 🤝 Contributing (Example For Frontend)
 
-1. Fork this repository
+1. Fork this repository and clone your forked repository
 
-2. Create a new branch  
+2. Create a new branch
+   
    ```
    git checkout -b feature/frontend
    ```
    
-3. Make your changes
+4. Make your changes
    
-4. Commit and push
+5. Commit and push
 
    ```
    git add .  
@@ -66,7 +67,7 @@ Image2Latex/
    git push origin feature/frontend
    ```
    
-5. Open a Pull Request to the main repository on GitHub 🚀
+6. Open a Pull Request to the main repository on GitHub 🚀
 
 ## If you find bugs or have ideas for improvements, open a New Issue in the Issues tab and describe your suggestion or problem clearly.  
 
