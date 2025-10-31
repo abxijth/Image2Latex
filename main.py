@@ -1,27 +1,24 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, jsonify
 from PIL import Image
 from pix2tex.cli import LatexOCR
-import io #to convert the image to acceptable format
+from flask_cors import CORS
+import io
 
 app = Flask(__name__)
-model = LatexOCR() #main model that converts image to Latex
+CORS(app)  # allow requests from your standalone frontend
 
-#Connect The Frontend
+model = LatexOCR()
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    latex_text = None
-    if request.method == 'POST':
-        uploaded_image = request.files["image"] #served from frontend
-        image = Image.open(io.BytesIO(uploaded_image.read()))
-        latex_text = model(image)
-    
+@app.route('/api/convert', methods=['POST'])
+def convert_image():
+    if 'image' not in request.files:
+        return jsonify({"error": "No image uploaded"}), 400
 
+    uploaded_image = request.files['image']
+    image = Image.open(io.BytesIO(uploaded_image.read()))
+    latex_text = model(image)
 
-
-    return render_template("index.html", result=latex_text)
-
-
+    return jsonify({"latex": latex_text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

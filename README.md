@@ -1,12 +1,11 @@
-# 🧮 Image2LaTeX
+# 🧮 Image2LaTeX (Backend)  
 
 A simple Flask web app that converts mathematical equation images into LaTeX code using the Pix2Text model.
 
 ## 🚀 Features
 
-- Upload an image containing a math equation
-- Convert it to LaTeX instantly
-- Display the generated LaTeX code in the browser
+- Provide an image containing a math equation
+- Convert it to LaTeX Code instantly
 
 ## 🛠️ Setup Instructions
 
@@ -38,23 +37,14 @@ A simple Flask web app that converts mathematical equation images into LaTeX cod
 
 The app will run at: ```http://127.0.0.1:5000```
 
-## 🧑‍💻 Project Structure
-
-Image2Latex/  
-├── main.py              # Flask backend  
-├── templates/  
-│   └── index.html       # Frontend HTML  
-├── venv/                # Virtual environment (ignored)  
-└── README.md  
-
-## 🤝 Contributing (Example For Frontend)
+## 🤝 Contributing
 
 1. Fork this repository and clone your forked repository
 
 2. Create a new branch
    
    ```
-   git checkout -b feature/frontend
+   git checkout -b feature/new
    ```
    
 4. Make your changes
@@ -63,8 +53,8 @@ Image2Latex/
 
    ```
    git add .  
-   git commit -m "feat: improve frontend design"  
-   git push origin feature/frontend
+   git commit -m "feat: improved backend"  
+   git push origin feature/new
    ```
    
 6. Open a Pull Request to the main repository on GitHub 🚀
@@ -73,12 +63,4 @@ Image2Latex/
 
 ## 🧠 Future Improvements
 
-- Better error handling for non-math images  
-- Improved UI/UX  
-- Drag-and-drop uploads  
-
-## 🧑‍🤝‍🧑 Contributors
-
--
-- 
-- 
+- Better error handling for non-math images
