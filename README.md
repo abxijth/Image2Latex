@@ -59,7 +59,7 @@ The app will run at: ```http://127.0.0.1:5000```
    
 6. Open a Pull Request to the main repository on GitHub 🚀
 
-## If you find bugs or have ideas for improvements, open a New Issue in the Issues tab and describe your suggestion or problem clearly.  
+- If you find bugs or have ideas for improvements, open a New Issue in the Issues tab and describe your suggestion or problem clearly.  
 
 ## 🧠 Future Improvements
 
