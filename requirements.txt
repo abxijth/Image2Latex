@@ -1,2 +1,3 @@
 pix2tex
 flask
+pillow
